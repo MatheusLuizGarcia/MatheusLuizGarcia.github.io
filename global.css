@@ -1,0 +1,19 @@
+*{
+    margin: 0 auto;
+    text-decoration: none;
+}
+
+html{
+    background-image: url('../portfolio/imagens/backgroundofc.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: ISOCPEUR;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    color:white;
+}
+
+.rodapePag{
+    width: 100%;
+    text-align: center;
+    background-color: rgb(30, 32, 33);
+}
