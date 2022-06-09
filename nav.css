@@ -1,10 +1,18 @@
 nav{
-    width: 100%;
+    position: fixed;
+    width: fit-content;
+    border-bottom-right-radius: 20px;
     height: 40px;
     background-color:rgb(30, 32, 33);
 }
 
 .itmNav{
+    float: right;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.itmNavX{
     float: right;
     padding: 10px;
     text-decoration: none;
@@ -17,5 +25,10 @@ nav{
 }
 
 .logo:hover, .itmNav:hover{
+    background-color: gray;
+}
+
+.itmNavX:hover{
+    border-bottom-right-radius: 20px;
     background-color: gray;
 }
