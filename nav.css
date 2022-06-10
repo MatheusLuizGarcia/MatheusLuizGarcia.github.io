@@ -1,34 +1,17 @@
 nav{
-    position: fixed;
-    width: fit-content;
+    position:fixed;
+    width: 7vw;
     border-bottom-right-radius: 20px;
-    height: 40px;
-    background-color:rgb(30, 32, 33);
+    height: fit-content;
+    backdrop-filter: grayscale(60%) blur(25px);
 }
 
 .itmNav{
-    float: right;
-    padding: 10px;
-    text-decoration: none;
-}
-
-.itmNavX{
-    float: right;
-    padding: 10px;
-    text-decoration: none;
-}
-
-.logo{
-    padding: 10px;
     float: left;
+    padding: 10px;
     text-decoration: none;
 }
 
-.logo:hover, .itmNav:hover{
-    background-color: gray;
-}
-
-.itmNavX:hover{
-    border-bottom-right-radius: 20px;
-    background-color: gray;
+.itmNav:hover{
+    color: brown;
 }

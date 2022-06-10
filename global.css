@@ -12,11 +12,12 @@ html{
 
 }
 
-.bg{
+#bg{
     position: absolute;
-    background-image:   url('../imagens/backgroundofc.jpg'), url('../imagens/background2.jpg');
+    background-image:   url('../imagens/background1.png');
     background-position: top,bottom;
     background-repeat: no-repeat, no-repeat;
+background-size: cover;
 }
 
 ::-webkit-scrollbar {
@@ -41,6 +42,7 @@ html{
   }
 
 .rodapePag{
+  position: absolute;
     width: 100%;
     text-align: center;
 }
