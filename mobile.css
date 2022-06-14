@@ -1,0 +1,35 @@
+/*---------------MOBILE PORT--------------*/
+
+@media screen and (max-width:720px) {
+
+
+    #navbar {
+        font-size: auto ;
+        font-size: 12px;
+        position: fixed;
+        border-radius: 0px;
+        width: 100%;
+    }
+
+    .blocoMain {
+        backdrop-filter: none;
+        width: 85vw;
+    }
+
+
+
+    .typewriter h1 {
+        font-size: 1.5em;
+    }
+
+    #bemVindo{
+        font-size: 18px;
+    }
+
+    #blocoCon img, #blocoHob img{
+        min-width: 15vw;
+
+    }
+
+
+}

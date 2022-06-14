@@ -7,7 +7,7 @@
   text-align: center;
   max-width: fit-content;
   animation:
-  appear 4s steps(96, end),  
+  appear 2s steps(96, end),  
   typing 4s steps(96, end),
   blink-caret .75s step-end infinite;
 }
@@ -30,6 +30,10 @@
 @keyframes blink-caret {
   from, to { border-color: transparent }
   50% { border-color: rgb(30, 32, 33); }
+}
+
+#bemVindo{
+  font-size: 42px;
 }
 
 
@@ -87,7 +91,8 @@ width: fit-content;
 }
 
 #blocoContato img{
-  margin: 1em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
   min-width: 4em;
   width: 5vw;
 }
