@@ -1,4 +1,5 @@
 #navbar{
+    z-index: 1;
     position: fixed;
     width: min-content;
     top: 0;
@@ -17,3 +18,27 @@
     color: brown;
 }
 
+/*-------animação-------*/
+
+
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 2s all ease;
+  }
+  .reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  .reveal2{
+    position: relative;
+    transform: translateY(100px);
+    opacity: 0;
+    transition: 2s all ease;
+  }
+  .reveal2.active{
+    transform: translateY(0);
+    opacity: 1;
+  }
