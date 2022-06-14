@@ -1,6 +1,7 @@
-nav{
-    position:fixed;
-    width: 7vw;
+#navbar{
+    position: fixed;
+    width: min-content;
+    top: 0;
     border-bottom-right-radius: 20px;
     height: fit-content;
     backdrop-filter: grayscale(60%) blur(25px);
@@ -15,3 +16,4 @@ nav{
 .itmNav:hover{
     color: brown;
 }
+
