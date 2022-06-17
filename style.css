@@ -1,16 +1,18 @@
 .typewriter h1 {
   margin: 0 auto;
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .15em solid; /* The typewriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  letter-spacing: .15em; /* Adjust as needed */
+  overflow: hidden; /* mantém o bloco invisível até a animação começar */
+  border-right: .15em solid; /* o efeito de "barra de digitação" */
+  white-space: nowrap; /* mantém o texto em uma única linha */
+  letter-spacing: .15em; /* ajusta o espaçamento entre as letras */
   text-align: center;
   max-width: fit-content;
-  animation:
+  animation:   /* define as animações */
   appear 2s steps(96, end),  
   typing 4s steps(96, end),
   blink-caret .75s step-end infinite;
 }
+
+/* o efeito de aparecimento */
 
 @keyframes appear{
   from{
@@ -20,49 +22,50 @@
       opacity: 1;
   }
 }
-/* The typing effect */
+/* o efeito de escrita */
 @keyframes typing {
   from { width: 0 }
   to { width: 100%;}
 }
 
-/* The typewriter cursor effect */
+/* o efeito da barra piscando */
 @keyframes blink-caret {
   from, to { border-color: transparent }
-  50% { border-color: rgb(30, 32, 33); }
+  50% { border-color: rgb(231, 132, 56); }
 }
 
+/* Config da fonte do typewriter de bem vindo*/
+
 #bemVindo{
-  font-size: 42px;
+  font-size: 2em;
 }
+
+/* base dos blocos */
 
 .blocoMain{
   text-align: center;
   padding: 2vw;
-  margin: auto; /* arrumar*/
-  min-width: 20%; /* arrumar*/
-  width: 30%; /* arrumar*/
+  margin: auto; 
+  min-width: 20%; 
+  width: 30%;
   border-radius: 20px;
   height: fit-content;
-  backdrop-filter: blur(15px) invert(20%);
+  backdrop-filter: blur(0.5em) invert(20%);
 }
 
-#perfil{
-  min-width: 300px;
-}
+/* bloco de perfil*/
 
 #perfil img{
   border-radius: 50%;
-  width: 200px;
+  width: 15em;
 }
 #perfil p{
-  padding: 10px;
   padding-top: 2em;
-  font-size: 18px;
+  font-size: 1.2em;
   width: 100%;
 }
 
-
+/* bloco de conhecimentos*/
 
 #blocoCon{
 width: fit-content;
@@ -74,15 +77,33 @@ width: fit-content;
   width: 5vw;
 }
 
+/* bloco de hobbies*/
+
 #blocoHob{
+  display: flex;
   width: fit-content;
-  }
+}
+
+#blocoHob ul{
+  display: flex;
+  align-content: center;
+  list-style: none;
+}
+
+#blocoHob li{
+  display: flexbox;
+  padding-left: 1vw;
+  padding-right: 1vw;
+  width: min-content;
+}
   
-  #blocoHob img{
+#blocoHob img{
     margin: 0.5em;
     min-width: 5em;
     width: 5vw;
-  }
+}
+
+/* bloco de contatos*/
 
 #blocoContato{
   width: fit-content;

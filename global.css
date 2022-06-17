@@ -1,3 +1,5 @@
+
+/* configs globais*/
 *{
     color: white;
     margin: 0 ;
@@ -7,31 +9,33 @@
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
   }
 
+html {
+  scroll-behavior: smooth; /* define qualquer animação de scroll como suave*/
+}
+
+/* config de plano de fundo */
 #bg{
     background-image:   url('../imagens/background1.png');
     background-size: cover;
 }
 
+/* configs da barra de rolagem */
 ::-webkit-scrollbar {
   width:  5px;
 }
 
-/* Track */
+/* fundo da barra */
 ::-webkit-scrollbar-track {
   background: rgba( 0, 0 , 0 , 1); 
 }
  
-/* Handle */
+/* barra */
 ::-webkit-scrollbar-thumb {
   background: brown;
   border-radius: 10px ; 
 }
 
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: black; 
-}
-
+/* config do rodapé*/
 .rodapePag{
     background-color: black;
     width: 100%;

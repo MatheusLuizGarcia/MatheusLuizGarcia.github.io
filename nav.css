@@ -5,12 +5,12 @@
     top: 0;
     border-bottom-right-radius: 20px;
     height: fit-content;
-    backdrop-filter: grayscale(60%) blur(25px);
+    backdrop-filter: grayscale(60%) blur(2em);
 }
 
 .itmNav{
     float: left;
-    padding: 5px;
+    padding: 0.4em;
     text-decoration: none;
 }
 
@@ -23,7 +23,7 @@
 
 .reveal{
     position: relative;
-    transform: translateY(150px);
+    transform: translateY(75px);
     opacity: 0;
     transition: 2s all ease;
   }
@@ -34,7 +34,7 @@
 
   .reveal2{
     position: relative;
-    transform: translateY(100px);
+    transform: translatey(-50px);
     opacity: 0;
     transition: 2s all ease;
   }

@@ -4,11 +4,11 @@
 
 
     #navbar {
-        font-size: auto ;
-        font-size: 12px;
+        font-size: 0.7em;
         position: fixed;
         border-radius: 0px;
         width: 100%;
+        height: calc(fit-content + 2vw)
     }
 
     .blocoMain {
@@ -16,19 +16,29 @@
     }
 
 
-
     .typewriter h1 {
         font-size: 1.5em;
     }
 
     #bemVindo{
-        font-size: 18px;
+        font-size: 1.4em;
+    }
+
+    #blocoCon{
+        width: 85vw;
+    }
+
+    #blocoHob{        
+        width: 85vw;
+        display: flex;
+    }
+
+    #blocoHob ul{
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
     #blocoCon img, #blocoHob img{
-        min-width: 15vw;
-
+        min-width: 14vw;
     }
-
-
 }
