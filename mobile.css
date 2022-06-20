@@ -4,12 +4,13 @@
 
 
     #navbar {
-        font-size: 0.7em;
+        font-size: 0.65em;
         position: fixed;
         border-radius: 0px;
         width: 100%;
-        height: calc(fit-content + 2vw)
+        height: 3vh;
     }
+
 
     .blocoMain {
         width: 85vw;
@@ -28,17 +29,17 @@
         width: 85vw;
     }
 
-    #blocoHob{        
+    #blocoProj, #blocoHob{        
         width: 85vw;
         display: flex;
     }
 
-    #blocoHob ul{
+    #blocoProj ul, #blocoHob ul{
         flex-wrap: wrap;
         justify-content: center;
     }
 
-    #blocoCon img, #blocoHob img{
+    #blocoProj img, #blocoCon img, #blocoHob img{
         min-width: 14vw;
     }
 }
