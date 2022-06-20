@@ -77,27 +77,27 @@ width: fit-content;
   width: 5vw;
 }
 
-/* bloco de hobbies*/
+/* blocos de projetos e hobbies*/
 
-#blocoHob{
+#blocoProj, #blocoHob{
   display: flex;
   width: fit-content;
 }
 
-#blocoHob ul{
+#blocoHob ul, #blocoProj ul{
   display: flex;
   align-content: center;
   list-style: none;
 }
 
-#blocoHob li{
+#blocoHob li, #blocoProj li{
   display: flexbox;
   padding-left: 1vw;
   padding-right: 1vw;
   width: min-content;
 }
   
-#blocoHob img{
+#blocoHob img, #blocoProj img{
     margin: 0.5em;
     min-width: 5em;
     width: 5vw;
