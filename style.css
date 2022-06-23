@@ -1,31 +1,24 @@
+.typewriter{
+  width:100%;
+  text-align: center;
+}
+
+
 .typewriter h1 {
   margin: 0 auto;
   overflow: hidden; /* mantém o bloco invisível até a animação começar */
   border-right: .15em solid; /* o efeito de "barra de digitação" */
   white-space: nowrap; /* mantém o texto em uma única linha */
   letter-spacing: .15em; /* ajusta o espaçamento entre as letras */
-  text-align: center;
-  max-width: fit-content;
+  max-width: max-content;
   animation:   /* define as animações */
-  appear 2s steps(96, end),  
-  typing 4s steps(96, end),
+  typing 4s steps(120, end),
   blink-caret .75s step-end infinite;
-}
-
-/* o efeito de aparecimento */
-
-@keyframes appear{
-  from{
-      opacity: 0;
-  }
-  to{
-      opacity: 1;
-  }
 }
 /* o efeito de escrita */
 @keyframes typing {
   from { width: 0 }
-  to { width: 100%;}
+  to { width: 100%}
 }
 
 /* o efeito da barra piscando */
@@ -40,78 +33,45 @@
   font-size: 2em;
 }
 
-/* base dos blocos */
-
-.blocoMain{
-  text-align: center;
-  padding: 2vw;
-  margin: auto; 
-  min-width: 20%; 
-  width: 30%;
-  border-radius: 20px;
-  height: fit-content;
-  backdrop-filter: blur(0.5em) invert(20%);
+h1{
+  font-size: 2em;
 }
 
-/* bloco de perfil*/
+h2{
+  margin: .5em;
+  font-size: 1.1em;
+}
+
+p{
+  margin: auto;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  font-size: 1.2em;
+  width: 30%;
+
+}
 
 #perfil img{
+  filter: drop-shadow(10px 5px 6px rgb(167, 167, 167));
+  margin: 1.5em;
   border-radius: 50%;
   width: 15em;
-}
-#perfil p{
-  padding-top: 2em;
-  font-size: 1.2em;
-  width: 100%;
 }
 
 /* bloco de conhecimentos*/
 
-#blocoCon{
-width: fit-content;
+#hobbies, #conhecimentos, #bemVindo{
+  top:40%;
+  position: relative;
+  border-radius: 20px;
+  backdrop-filter: invert(5%)blur(15px);
+  width: fit-content;
+  margin: auto;
+  padding:1em;
 }
 
-#blocoCon img{
+#conhecimentos img, #proj img, #hobbies img{
   margin: 0.5em;
   min-width: 5em;
-  width: 5vw;
-}
-
-/* blocos de projetos e hobbies*/
-
-#blocoProj, #blocoHob{
-  display: flex;
-  width: fit-content;
-}
-
-#blocoHob ul, #blocoProj ul{
-  display: flex;
-  align-content: center;
-  list-style: none;
-}
-
-#blocoHob li, #blocoProj li{
-  display: flexbox;
-  padding-left: 1vw;
-  padding-right: 1vw;
-  width: min-content;
-}
-  
-#blocoHob img, #blocoProj img{
-    margin: 0.5em;
-    min-width: 5em;
-    width: 5vw;
-}
-
-/* bloco de contatos*/
-
-#blocoContato{
-  width: fit-content;
-}
-
-#blocoContato img{
-  padding-left: 0.5em;
-  padding-right: 0.5em;
-  min-width: 4em;
   width: 5vw;
 }

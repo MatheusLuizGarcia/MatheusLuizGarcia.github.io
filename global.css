@@ -1,22 +1,63 @@
 
 /* configs globais*/
 *{
-    color: white;
+    color: rgb(40,40,80);
     margin: 0 ;
     padding: 0 ;
     text-decoration: none;
     font-family: 'Ubuntu', sans-serif;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
   }
+
+b{
+  color: brown;
+}
 
 html {
   scroll-behavior: smooth; /* define qualquer animação de scroll como suave*/
 }
 
-/* config de plano de fundo */
-#bg{
-    background-image:   url('../imagens/background1.png');
-    background-size: cover;
+section{
+  text-align: center;
+  width: 100%;
+  height: fit-content;
+  background-color: whitesmoke;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+section:nth-of-type(1){
+  background-image: url('imagens/bg1.jpg') ;
+  height: 1000px;
+}
+
+section:nth-of-type(3){
+  background-image: url('imagens/bg2.jpg') ;
+  height: 1000px;
+}
+
+section:nth-of-type(5){
+  background-image: url('imagens/bg3.jpg') ;
+  height: 1000px;
+}
+
+section:nth-of-type(7){
+  background-image: url('imagens/bg4.jpg') ;
+  height: 1000px;
+}
+
+
+
+
+
+
+/* config do rodapé*/
+.rodapePag{
+  background-color: black;
+  width: 100%;
+  text-align: center;
 }
 
 /* configs da barra de rolagem */
@@ -35,9 +76,3 @@ html {
   border-radius: 10px ; 
 }
 
-/* config do rodapé*/
-.rodapePag{
-    background-color: black;
-    width: 100%;
-    text-align: center;
-}
