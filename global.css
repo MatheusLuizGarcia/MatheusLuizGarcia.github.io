@@ -1,7 +1,11 @@
-
+:root{
+  --background: rgb(240,230,210);
+  --text: rgb(20,20,20);
+  --bold: rgb(238, 109, 69);
+}
 /* configs globais*/
 *{
-    color: rgb(40,40,80);
+    color: var(--text) ;
     margin: 0 ;
     padding: 0 ;
     text-decoration: none;
@@ -9,7 +13,7 @@
   }
 
 b{
-  color: brown;
+  color: var(--bold);
 }
 
 html {
@@ -17,10 +21,11 @@ html {
 }
 
 section{
+  padding:20px 0 20px;
   text-align: center;
   width: 100%;
   height: fit-content;
-  background-color: whitesmoke;
+  background-color: var(--background);
 
   background-position: center;
   background-repeat: no-repeat;

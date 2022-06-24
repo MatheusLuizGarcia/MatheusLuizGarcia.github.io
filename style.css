@@ -1,3 +1,6 @@
+@import "global.css";
+
+
 .typewriter{
   width:100%;
   text-align: center;
@@ -24,13 +27,19 @@
 /* o efeito da barra piscando */
 @keyframes blink-caret {
   from, to { border-color: transparent }
-  50% { border-color: rgb(231, 132, 56); }
+  50% { border-color: var(--bold); }
 }
 
 /* Config da fonte do typewriter de bem vindo*/
 
 #bemVindo{
   font-size: 2em;
+  top:35%;
+  position: relative;
+  border-radius: 20px;
+  width: fit-content;
+  margin: auto;
+  padding:1em;
 }
 
 h1{
@@ -45,14 +54,12 @@ h2{
 p{
   margin: auto;
   padding-top: 2em;
-  padding-bottom: 2em;
   font-size: 1.2em;
   width: 30%;
 
 }
 
 #perfil img{
-  filter: drop-shadow(10px 5px 6px rgb(167, 167, 167));
   margin: 1.5em;
   border-radius: 50%;
   width: 15em;
@@ -60,11 +67,11 @@ p{
 
 /* bloco de conhecimentos*/
 
-#hobbies, #conhecimentos, #bemVindo{
-  top:40%;
+#hobbies, #conhecimentos{
+  top:35%;
   position: relative;
   border-radius: 20px;
-  backdrop-filter: invert(5%)blur(15px);
+  backdrop-filter: invert(10%)blur(15px);
   width: fit-content;
   margin: auto;
   padding:1em;
@@ -74,4 +81,14 @@ p{
   margin: 0.5em;
   min-width: 5em;
   width: 5vw;
+}
+
+#hobbies ul{
+  list-style: none;
+}
+
+#hobbies ul li{
+  padding: 15px;  
+  display: inline-block;
+  
 }

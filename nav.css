@@ -1,8 +1,10 @@
+@import "global.css";
+
 nav{
   z-index: 1;
   position:fixed;
   width: 100%;
-  background-color: whitesmoke;
+  background-color: var(--background);
 }
 
 nav ul li{
