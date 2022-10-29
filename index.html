@@ -1,135 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet"> 
-        <link rel="stylesheet" href="nav.css">
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="global.css">
-        <link rel="stylesheet" href="mobile.css">
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="shortcut icon" href="/imagens/logos/favicon.ico" />
-        <title>Matheus Luiz Garcia</title>
-    </head>
 
-    <body id="bg">
-        <header id="navbar">
-        <ul>
-            <a href="#inicio" class="itmNav">Início</a>
-            <a href="#sobremim" class="itmNav">Sobre mim</a>
-            <a href="#conhecimentos" class="itmNav">Conhecimentos</a>
-            <a href="#proj" class="itmNav">Projetos</a>
-            <a href="#hobbies" class="itmNav">Hobbies</a>
-            <a href="#contatos" class="itmNav">Como me encontrar</a>
-        </ul>
-        </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="/assets/css/input.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="./favicon.ico">
+  <title>Matheus Luiz//dev</title>
+</head>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          fontdestaque: "#ffd670",
+          shadow1: "#21DED5",
+          shadow2: "#FF9635",
+          teste: "#010617",
+        },
+      },
+    },
+  };
+</script>
 
-        <div style="height: 300px" id="inicio">     </div>
+<body class="bg-gray-300">
 
-        <div class="typewriter" id="bemVindo">
-            <h1>Bem vindo ao <br>meu <b style="color: brown;">portfólio!</b></h1>
+  <!-- NAVBAR -->
+
+  <div id="nav" class="bg-teste flex h-10 w-full items-center mx-auto justify-around">
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars left-3 bottom-3 absolute align-middle lg:hidden" id="hamburguer" style="filter: invert(100%)"></i>
+    </a>
+    <div id="myLinks" class="absolute">
+      <a href="#main" class="nav-link text-shadow1 w-full text-s align-middle">
+        //
+        <span class="text-white hover:text-fontdestaque">
+        Main
+        </span>
+      </a>
+      <a href="#projetos" class="nav-link text-shadow1 text-s align-middle">
+        //
+        <span class="text-white hover:text-fontdestaque">
+        Projetos
+        </span>
+      </a>
+      <a href="#conhecimentos" class="nav-link text-shadow1 text-s align-middle">
+        //
+        <span class="text-white hover:text-fontdestaque">
+        Conhecimentos
+        </span>
+      </a>
+      <a href="#contatos" class="nav-link text-shadow1 text-s align-middle">
+        //
+        <span class="text-white hover:text-fontdestaque">
+        Contatos
+        </span>
+      </a>
+    </div>
+  </div>
+
+  <!-- Breve apresentação -->
+
+  <section id="main">
+    <div class="text-white h-auto mx-auto pt-1 bg-teste px-4" id="ap-main">
+      <h3 class="text-center font-bold my-4 text-4xl">Bem vindo ao meu <span class="text-shadow1">portifólio!</span></h3>
+      <p class="mt-2 mb-5 mx-auto w-80 text-justify">
+        Meu nome é <span class="text-shadow1">Matheus</span>, 
+        desenvolvedor C#/.NET certificado pelo programa <a class="text-fontdestaque" href="https://www.entra21.com.br/">Entra21</a>,
+        também desenvolvo aplicações web com php e javascript.
+      </p>
+    </div>
+  </section>
+
+  <!-- Projetos -->
+
+  <section id="projetos">
+    <h1 class="text-shadow1 text-5xl text-center">//<span class="text-shadow2">Projetos</span></h1>
+    <div id="grid-projetos">
+      <div class="card-projetos">
+        <img src="./assets/imgs/vitrineonline.png" alt="Logo Vitrine Online">
+        <h3 class="text-xl font-bold truncate">Vitrine Online</h3>
+        <p class="truncate">Plataforma para criação e gerenciamento de e-commerces</p>
+        <h6 class="text-fontdestaque">Linguagens usadas:</h6>
+        <span>php, Javascript, bootstrap</span>
+        <div class="btn-card">
+          <button><a href="http://vitrineonline.lwolfgramm.com/">Acessar</a></button>
+          <button disabled><a title="Esse repositório é privado!" onclick="alert('Esse repositório é privado!')">Ver código</a></button>
         </div>
-
-        <div style="height: 300px" id="sobremim">     </div>
-
-        <div class="typewriter reveal" >
-            <h1>Quem sou <b style="color: brown;">eu?</b></h1>
+      </div>
+      <div class="card-projetos">
+        <img src="./assets/imgs/calc.png" alt="Calculadora">
+        <h3 class="text-xl font-bold truncate">Calculadora em C#</h3>
+        <p class="truncate">Clone da calculadora do Windows</p>
+        <h6 class="text-fontdestaque">Linguagens usadas:</h6>
+        <span>C#</span>
+        <div class="btn-card">
+          <button><a href="https://github.com/MatheusLuizGarcia/Calculadora-Csharp">Acessar</a></button>
+          <button><a href="https://github.com/MatheusLuizGarcia/Calculadora-Csharp">Ver código</a></button>
         </div>
-
-        <div class="blocoMain reveal" id="perfil">
-            <img src="/imagens/matheus.jfif">
-            <h4 style="text-align: center;"">^ <b style="color: brown;">Esse</b> sou eu! ^</h4>
-
-            <p>Prazer, Matheus, dev em formação!<br> Sempre tive paixão por programação e tudo relacionado à informática,
-                com o programa <b style="color: brown;">ENTRA21</b> e o apoio de várias empresas, estou realizando minha meta de
-                adentrar no mercado de tecnologias.
-            </p>
-
+      </div>
+      <div class="card-projetos">
+        <img src="./assets/imgs/livro.png" alt="alura-stickers">
+        <h3 class="text-xl font-bold truncate">Projeto Alura Stickers</h3>
+        <p class="truncate">Projeto desenvolvido na Imersão Alura - Java</p>
+        <h6 class="text-fontdestaque">Linguagens usadas:</h6>
+        <span>Java</span>
+        <div class="btn-card">
+          <button><a href="https://github.com/MatheusLuizGarcia/alura-stickers">Acessar</a></button>
+          <button><a href="https://github.com/MatheusLuizGarcia/alura-stickers">Ver código</a></button>
         </div>
-
-        <div style="height: 300px" id="conhecimentos">     </div>
-
-
-
-        <div class="typewriter reveal" >
-            <h1>Meus <b style="color: brown;">conhecimentos:</b></h1>
+      </div>
+      <div class="card-projetos">
+        <img src="./assets/imgs/livro.png" alt="Estudos">
+        <h3 class="text-xl font-bold truncate">Estudos C#</h3>
+        <p class="truncate">Repositório de estudos de C# e .NET</p>
+        <h6 class="text-fontdestaque">Linguagens usadas:</h6>
+        <span>C#</span>
+        <div class="btn-card">
+          <button><a href="https://github.com/MatheusLuizGarcia/Testes_CSharp">Acessar</a></button>
+          <button><a href="https://github.com/MatheusLuizGarcia/Testes_CSharp">Ver código</a></button>
         </div>
-        <br>
-        <div class="blocoMain reveal" id="blocoCon">
-                <img src="imagens/logos/git-original.svg">
-                <img src="imagens/logos/c-original.svg">
-                <img src="imagens/logos/csharp-original.svg">
-                <img src="imagens/logos/dot-net-original-wordmark.svg">
-                <br>
-                <img src="imagens/logos/html5-original.svg">
-                <img src="imagens/logos/css3-original.svg">
-                <img src="imagens/logos/javascript-original.svg" style="border-radius: 20%;">
-                <img src="imagens/logos/mysql.png">
-        </div>
+      </div>
+    </div>
+  </section>
 
-        <div style="height: 300px" id="proj">    </div>
+  <!-- Conhecimentos -->
 
-        <div class="typewriter reveal" >
-            <h1><b style="color: brown;">Projetos</b> elaborados:</h1>
-        </div>
-        <br>
-        <div class="blocoMain reveal" id="blocoProj">
-            <ul>
-                <li><img src="imagens/work-in-progress.png">Perfil em construção!</li>
-                <li><img src="imagens/work-in-progress.png">Perfil em construção!</li>
-                <li><img src="imagens/work-in-progress.png">Perfil em construção!</li>
-                <li><img src="imagens/work-in-progress.png">Perfil em construção!</li>
-                <li><img src="imagens/work-in-progress.png">Perfil em construção!</li>
-                <li><img src="imagens/work-in-progress.png">Perfil em construção!</li>
-            </ul>
-        </div>
-        
-        <div style="height: 300px" id="hobbies">    </div>
+  <section id="conhecimentos">
+    <div id="conhecimentos-main">
+      <h1 class="text-shadow1 text-4xl text-center">//<span class="text-shadow2">Conhecimentos</span></h1>
+      <div id="grid-conhecimentos">
+        <img src="./assets/imgs/c-sharp.png" alt="csharp">
+        <img src="./assets/imgs/php.png" alt="php">
+        <img src="./assets/imgs/typescript.png" alt="typescript">
+        <img src="./assets/imgs/angular.png" alt="angular">
+        <img src="./assets/imgs/vue-js.png"  width="60px" height="60px" alt="vue">
+        <img src="./assets/imgs/mysql.png" alt="mysql">
+      </div>
+    </div>
+  </section>
 
-            <div class="typewriter reveal" >
-                <h1>Alguns <b style="color: brown;">Hobbies:</b> meus:</h1>
-            </div>
-            <br>
-            <div class="blocoMain reveal" id="blocoHob">
-                <ul>
-                    <li><img src="imagens/hobbies/chess.png">Xadrez</li>
-                    <li><img src="imagens/hobbies/code.png">Clean Coding</li>
-                    <li><img src="imagens/hobbies/listen.png">Ouvir música</li>
-                    <li><img src="imagens/hobbies/gundam.png">Animes e Séries</li>
-                    <li><img src="imagens/hobbies/gaming.png">Jogos Online</li>
-                </ul>
-            </div>
+  <!-- Contatos -->
 
-        </div>
+  <section id="contatos">
+    <div id="contatos-main">
+      <h1 class="text-shadow1 text-5xl text-center">//<span class="text-shadow2">Contatos</span></h1>
+      <div id="grid-contatos">
+        <a href="https://www.linkedin.com/in/matheus-luiz-garcia-b48680238/" target="_blank">
+          <img src="https://www.freeiconspng.com/uploads/linkedin-logo-3.png" width="80">
+        </a>
+        <a href="https://www.github.com/matheusluizgarcia/" target="_blank">
+          <img src="https://cdn4.iconfinder.com/data/icons/iconsimple-logotypes/512/github-512.png" style="filter:invert(100%)" width="80">
+        </a>
+        <a href="mailto:matheusluizgarcia99@gmail.com?subject=Sobre seu portifólio..." target="_blank">
+          <img src="./assets/imgs/gmail.png" width="100">
+        </a>
+      </div>
+    </div>
+  </section>
 
-        <div style="height: 400px" id="contatos">     </div>
+<footer class=" text-center w-full bg-teste text-white">
+  <span>Desenvolvido por <span class="text-shadow1">Matheus Luiz Garcia</span> com
+    <img class="inline pb-2" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/600px-Tailwind_CSS_Logo.svg.png?20211001194333" width="30px" height="30px" alt="tailwindcss">
+  Tailwindcss
+  </span>
+</footer>
 
-            <div class="typewriter reveal2" >
-                <h1><b style="color: brown;">Como</b> me encontrar:</h1>
-            </div>
-                <div class="blocoMain reveal2" id="blocoContato">
-                        <a href="https://github.com/MatheusLuizGarcia" target="_blank">
-                            <img src="imagens/contatos/github-original.svg">
-                        </a>
-                        <a href="https://instagram.com/grr_cia" target="_blank">
-                            <img src="imagens/contatos/instagram.png">
-                        </a>
-                        <a href="https://www.linkedin.com/in/matheus-luiz-garcia-b48680238/" target="_blank">
-                            <img src="imagens/contatos/linkedin-original.svg">
-                        </a>
-                </div>
-
-        <div style="height: 30px">      </div>
-
-        <footer class="rodapePag">
-            Página desenvolvida com muito <b style="color: brown">Café</b>
-            <br>
-            por: Matheus Luiz <b style="color: brown">Garcia.</b>
-        </footer>
-
-        <script src="nav.js"></script>
-    </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="./assets/js/functions.js"></script>
+</body>
 </html>
